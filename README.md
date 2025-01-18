@@ -9,7 +9,7 @@ Key Insights
  
 	•	Switch-to-Switch Connection Attempt:
 	•	I connected two switches from different networks in Cisco Packet Tracer without a router.
-	•	When I tried to send a message from one device (Johnny) on one switch to a device (Larry) on another, the message failed repeatedly.
+	•	When I tried to send a message from one device (Johnny) on one switch to a device (NetworkLarry.com) on another, the message failed repeatedly.
 	•	This happened because:
 	•	Devices on separate networks have different IP address groups.
 	•	The switch sent an ARP (Address Resolution Protocol) message to locate the destination device’s MAC address.
@@ -20,7 +20,7 @@ Key Insights
  
 	•	After adding a router to the setup:
 	•	When Johnny tried to ping networklarry.com on the other network, an ARP request was sent to the router.
-	•	The router responded with information about the destination IP address and communicated with the other network to locate the device (Larry).
+	•	The router responded with information about the destination IP address and communicated with the other network to locate the device (NetworkLarry.com).
 	•	The message was successfully delivered, proving that a router acts as a bridge between different networks.
 	
  3.	Adding a DNS Server:
@@ -44,11 +44,13 @@ Practical Commands Used:
 1. Ping Command
    
 - To test connectivity:
+  
   ping <destination IP or domain>
 
 2. Router Routing Table
 
 - To view the IP address mappings and routing information :
+  
   show ip route
 
 Lessons Learned
